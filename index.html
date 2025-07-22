@@ -135,10 +135,10 @@
 
 <script>
   const music = document.getElementById('bg-music');
-  music.volume = 0.3; // İlk yüklemede bile sesi düşür
+  music.volume = 0.1;
 
   function playMusicOnce() {
-    music.volume = 0.3; // Etkileşimde tekrar sesi sabitle
+    music.volume = 0.1;
     music.play().catch(() => {});
   }
 
