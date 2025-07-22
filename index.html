@@ -136,6 +136,7 @@
 <script>
   function playMusicOnce() {
     const music = document.getElementById('bg-music');
+    music.volume = 0.3; // %30 ses seviyesi
     music.play().catch(() => {});
   }
 
