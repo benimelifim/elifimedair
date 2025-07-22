@@ -134,9 +134,11 @@
 </audio>
 
 <script>
+  const music = document.getElementById('bg-music');
+  music.volume = 0.3; // İlk yüklemede bile sesi düşür
+
   function playMusicOnce() {
-    const music = document.getElementById('bg-music');
-    music.volume = 0.3; // %30 ses seviyesi
+    music.volume = 0.3; // Etkileşimde tekrar sesi sabitle
     music.play().catch(() => {});
   }
 
